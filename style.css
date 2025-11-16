@@ -1,0 +1,218 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+background-color: #374308;
+padding: 10px;
+display: flex;
+align-items: center;
+box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+position: fixed;
+
+width: 100%;
+z-index: 1000;
+}
+
+h1 span {
+    color: #f99203;
+}
+
+
+.acronim {
+    margin-left: 700px;
+    color: #f99203;
+    font-size:50px;
+
+}
+
+nav {margin-left: 50px;}
+
+h1 {font-size: 50px;}
+
+nav a {
+    font-size: 25px;
+    margin-left: 15px;
+    text-decoration: none;
+    color: #f99203;
+}
+
+#hero {
+
+    justify-content: flex-start;
+    padding: 100px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+    background-image: url('HERO.JPG');                                 
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+#hero::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 121%;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 1;
+}
+
+#hero h2, #hero h3 {
+    position: relative;
+    z-index: 2;
+    color: white;
+    text-shadow: 2px 2px 10px black;
+}
+
+#hero h2 {
+    padding-top: 150px;
+    margin-bottom: 120px;
+    font-size: 4.5em;
+    justify-content: flex-start;
+}
+
+#hero h3 {
+    font-size: 2em;
+}
+
+#portofoliu {
+    padding: 80px;
+    background: #374308;
+    color: #f99203;
+}
+
+#portofoliu h2 {
+    font-size: 40px;
+    margin-bottom: 40px;
+    color: #f99203;
+}
+
+.grid-poze {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.grid-poze img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0 0 0 0.2);
+    aspect-ratio: 1 / 1;
+}
+
+#despre {
+    padding: 80px;
+    background: #374308;
+    color: #f99203;
+}  
+
+
+.container-despre {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    max-width: 1200px;
+    margin: auto;
+    padding: 40px 0;
+}
+
+
+.container-text h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+    color:#f99203;
+}
+
+.container-text p {
+    font-size: 20px;
+    line-height: 1.3;
+    color:#f99203;
+    max-width: 500px;
+}
+
+.poza-despre img{
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 50%;
+    
+}
+
+#contact {
+    padding: 0 10px 100px 10px;
+    background-color: #374308;
+    text-align: center;
+    color: #f99203;
+}
+
+#contact h2 {
+    font-size: 50px;
+    margin-bottom: 40px;
+    text-shadow: 2px 2px 8px black;
+}
+
+.contact-container {
+    max-width: 1000px;
+    margin: auto;
+    display: flex;
+    gap: 40px;
+    align-items: flex-start;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.contact-info {
+    flex: 1;
+    min-width: 250px;
+    font-size: 22px;
+}
+
+.contact-form {
+    flex: 1;
+    min-width: 280px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-form input, 
+.contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    background-color: #f99203 ;
+    border: 2px solid #f99203;
+    color: black;
+    font-size: 18px;
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+
+.contact-form button {
+    width: 100%;
+    padding: 12px;
+    background-color: #f99203;
+    color: black;
+    border: none;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s ease;
+
+}
+
+.contact-form button:hover {
+    background-color: #ffae42;
+}
+
+section {
+    overflow: hidden;
+}
